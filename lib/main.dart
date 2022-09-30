@@ -3,8 +3,7 @@ void main(){
 
   var apptitle = Text('我的第一個Flutter app'),
       // ignore: prefer_const_constructors
-      hiFlutter = Text(
-        'Hi, Flutter.\n今天是20220926',
+      hiFlutter = Text('Hi, Flutter.\n今天是20220926',
         style: TextStyle(
             fontSize: 30,
             color: Color(0xFF263238),
@@ -13,8 +12,20 @@ void main(){
       );
 
   var img = Image.network("https://imgur.com/kyIOhQo.jpg");
+  var box = Container(
+    margin: const EdgeInsets.all(10.0),
+    color: Color(0xFF1DE9B6),
+    width: 300,
+    height: 600,
+    child: Align(
+      alignment: Alignment.topRight,
+      child: hiFlutter,
+    ),
+  );
+
+
   var appBody = Center(
-    child: img,
+    child: box,
   );
 
   var appBar = AppBar(
