@@ -24,8 +24,12 @@ void main(){
   );
 
 
-  var appBody = Center(
-    child: box,
+  var appBody = Container(
+    child: hiFlutter,
+    alignment: Alignment.topCenter,
+    margin: EdgeInsets.all(80),
+    color: Color(0xFF1DE9B6),
+    // padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
   );
 
   var appBar = AppBar(
